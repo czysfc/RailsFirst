@@ -1,4 +1,5 @@
-Proj::Application.routes.draw do
+Proj1::Application.routes.draw do
+
   get "home/index"
 
   resources :projects

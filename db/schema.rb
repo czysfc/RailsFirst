@@ -11,22 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130221031409) do
+ActiveRecord::Schema.define(:version => 20130227062646) do
 
   create_table "projects", :force => true do |t|
     t.string   "title"
+    t.datetime "due"
     t.text     "discription"
-    t.date     "due"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
 
   create_table "tasks", :force => true do |t|
     t.string   "title"
-    t.text     "discription"
-    t.date     "taskdue"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "due"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end

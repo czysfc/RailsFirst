@@ -1,4 +1,4 @@
 class Task < ActiveRecord::Base
-  attr_accessible :discription, :taskdue, :title
-  belongs_to:project
+  attr_accessible :due, :title
+  belongs_to :project
 end
