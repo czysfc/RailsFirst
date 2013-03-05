@@ -1,7 +1,8 @@
-Blog::Application.routes.draw do
-  resources :posts do
-  resources :comments
-  end
+Proj1::Application.routes.draw do
+
+  get "home/index"
+
+  resources :projects
 
 
   # The priority is based upon order of creation:
@@ -54,8 +55,6 @@ Blog::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
     root :to => 'home#index'
-    root :to => 'posts#show'
-    root :to => 'CommentsController#show'
 
   # See how all your routes lay out with "rake routes"
 
