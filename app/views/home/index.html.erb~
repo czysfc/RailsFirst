@@ -1,5 +1,0 @@
-<h1>Home#index</h1>
-
-<%= link_to "新規作成",new_project_path %>
-
-<p>Find me in app/views/home/index.html.erb</p>
